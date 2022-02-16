@@ -6,3 +6,13 @@
 .bg-light-ash{
     background-color: #d4dfc8d8;
 }
+
+#parcentage-value{
+    width: 54px;
+}
+
+@media (max-width: 400px){
+    #parcentage-value, #savings{
+        width: 54px;
+    }
+}

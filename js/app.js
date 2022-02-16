@@ -59,3 +59,21 @@ function totalExpenses(fExpense, rExpense, cExpense) {
     const total = fExpense + rExpense + cExpense;
     return total;
 }
+
+
+document.getElementById('savings').addEventListener('click', function() {
+    const income = document.getElementById('income-field').value;
+    const percent = parseInt(document.getElementById('parcentage-value').value);
+    const savingsAmount = (income / 100) * percent;
+    const balance = parseFloat(document.getElementById('available-balance').innerText);
+    if (savingsAmount > balance) {
+        alert('you can not save it');
+        document.getElementById('parcentage-value').value = '';
+        document.getElementById('save-amount').innerText = '';
+        document.getElementById('remain-Balance').innerText = '';
+    }else{
+        document.getElementById('save-amount').innerText = savingsAmount;
+        document.getElementById('remain-Balance').innerText = balance - savingsAmount;
+    }
+
+})
