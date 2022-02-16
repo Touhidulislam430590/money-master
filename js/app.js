@@ -1,3 +1,4 @@
+// function for check and get input field 
 document.getElementById('calculate').addEventListener('click', function(){
     const income = document.getElementById('income-field').value;
     let incomeNumber = 0;
@@ -44,23 +45,25 @@ document.getElementById('calculate').addEventListener('click', function(){
 
     const total = totalExpenses(foodExpense, rentExpense, clothesExpense);
 
-    const totalExpenseSum = document.getElementById('total-expense').innerText = total;
-    const availableBalance = incomeNumber - totalExpenseSum;
+    
+    const availableBalance = incomeNumber - total;
     if (availableBalance < 0) {
         alert('Your expense is more high than your income');
+        document.getElementById('total-expense').innerText = '';
     }
     else{
         document.getElementById('available-balance').innerText = availableBalance;
+        document.getElementById('total-expense').innerText = total;
     }
 })
 
-
+// function for add expense value
 function totalExpenses(fExpense, rExpense, cExpense) {
     const total = fExpense + rExpense + cExpense;
     return total;
 }
 
-
+// calculate savings function 
 document.getElementById('savings').addEventListener('click', function() {
     const income = document.getElementById('income-field').value;
     const percent = parseInt(document.getElementById('parcentage-value').value);

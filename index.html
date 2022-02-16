@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <title>Hello, world!</title>
+        <title>Baap er wallet....!</title>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -28,8 +28,8 @@
                 </div>
 
                 <div class="col-md-6 px-lg-5 my-lg-0 my-sm-5 d-lg-flex justify-lg-content-center">
-                    
                     <div class="bg-light-ash container p-lg-5">
+                        <!-- income field here  -->
                             <h3 class="text-center my-5">Income</h3>
                             <div class="mb-3 row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Income:</label>
@@ -37,23 +37,27 @@
                                     <input type="text" class="form-control" id="income-field" value="0">
                                  </div>
                             </div>            
-                         
+
+                            <!-- Expense fields here -->
                             <h3 class="text-center my-5">Expenses</h3>
                              
+                            <!-- food field  -->
                             <div class="mb-3 row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Food:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="food-field" value="0">
                                 </div>
                             </div>
-     
+
+                            <!-- rent field here  -->
                             <div class="mb-3 row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Rent:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="rent-field" value="0">
                                 </div>
                             </div>
-     
+                            
+                            <!-- clothes field here  -->
                             <div class="mb-3 row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Clothes:</label>
                                 <div class="col-sm-10">
@@ -65,8 +69,11 @@
                                 <button class="btn btn-primary" id="calculate">Calculate</button>
                             </div>
 
+                            <!-- Expense and balance section here  -->
                             <h5 class="text-center">Total Expenses: <span id="total-expense"></span> </h5>
                             <h5 class="text-center">Balance: <span id="available-balance"></span> </h5>
+
+                            <!-- percentage calculation field  -->
                             <div class="mb-3 row">
                                 <label for="staticEmail" class="col-2 col-form-label">Save:</label>
                                 <input type="text" class="form-control col-4" id="parcentage-value" value="0">
@@ -75,7 +82,7 @@
                                 
                             </div>
                             
-                                 
+                            <!-- saving amount and remaining amount here -->
                             <h5 class="text-center">Saving Amount: <span id="save-amount"></span> </h5>
                             <h5 class="text-center">Remaining Balance: <span id="remain-Balance"></span> </h5>
                              
